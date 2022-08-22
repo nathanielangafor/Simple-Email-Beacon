@@ -20,7 +20,7 @@ As cyber security enthusiasts, we have come to understand over 95% of cyber crim
 
 ## Installation
 
-Use the package manager [npm]([https://pip.pypa.io/en/stable/](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)) to install the following packages
+Use the package manager [npm]([https://docs.npmjs.com/downloading-and-installing-node-js-and-npm]) to install the following packages
 
 ```bash
 npm install express
