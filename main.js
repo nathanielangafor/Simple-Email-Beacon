@@ -47,7 +47,7 @@ app.get('/emailBeacon', (req, res) => {
     database.update('trackingLinks', 'cordinates', cordinates + ':' + String(lookup(loggedIPAddresses)['ll']), 'UUID', req.query.UUID)
     
     // Render image
-    res.sendFile('/Users/fnln/Desktop/Email Beacon/ket.jpeg');
+    res.sendFile('/Users/fnln/Desktop/Email Beacon/1x1_image.png');
   } else {
     res.send("{'error': 'Please add the UUID perameter.'}");
   }
