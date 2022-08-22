@@ -7,12 +7,12 @@
 ```SEB``` is the easiest and most secure way to track outgoing emails.
 
 ## Use Case
-As cyber security enthusiasts, we have come to understand over 95% of cyber crimes are due to human error and over 90% of these crimes are carried out through email. Our goal was to create a tool that allows you to track your emails with as many data points as possible. With this you will be able to get data of each time someone opens your email along with the
+As cyber security enthusiasts, we have come to understand over 95% of cyber crimes are due to human error and over 90% of these crimes are carried out through email. Our goal was to create a tool that allows you to track your emails with as many data points as possible. With this, you will be able to get data of each time someone opens your email along with the
 
 ```
 - IP Address
 - Date and Time
-- Estimated Location Cordinates
+- Estimated Location Coordinates
 ```
 
 
@@ -28,17 +28,17 @@ npm install express-ip
 ## Usage
 
 ```JavaScript
-// Initialize express web client on local host, port 3000
+// Initialize express web client on a local host, port 3000
 node main.js
 ```
 
 ```curl
-// Generate hash to insert into email
+// Generate hash to insert into an email
 curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/generateHash'
 ```
 
 ```
-// Periodically send get requests to the following URL for to get the mail status
+// Periodically send get requests to the following URL to get the mail status
 curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/emailBeaconStatus?hash=<YOUR_GENERATED_HASH>'
 ```
 
