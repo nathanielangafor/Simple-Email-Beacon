@@ -28,7 +28,7 @@ npm install express-ip
 ```
 
 ## Usage
-This project will be a working UI within the next few weeks but in the meantime, the tool can be used with the following commands.
+This project will be a working UI within the next few weeks but in the meantime, the tool can be used with the following commands. To follow our progress please follow our repo: https://github.com/cszach/email-beacon-frontend
 ```JavaScript
 // Initialize express web client on a local host, port 3000
 node main.js
@@ -51,6 +51,3 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
-Here is the repo to the frontend: https://github.com/cszach/email-beacon-frontend
