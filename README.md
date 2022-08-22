@@ -8,10 +8,11 @@
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [npm]([https://pip.pypa.io/en/stable/](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)) to install the following packages
 
 ```bash
-pip install foobar
+npm install express
+npm install express-ip
 ```
 
 ## Usage
