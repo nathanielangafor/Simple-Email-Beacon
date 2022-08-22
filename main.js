@@ -14,6 +14,7 @@ const app = express();
 const port = 3000
 app.use(expressip().getIpInfoMiddleware);
 
+
 // Generates JSON data of a valid tracking link
 app.get('/generateUUID', (req, res) => {
   // Generate UUID
@@ -73,10 +74,12 @@ app.get('/emailBeaconStatus', (req, res) => {
   }
 });
 
+
 app.get('/', (req, res) => {
   console.log(req.ipInfo);
   res.send('You should not be seeing this right now!')
 })
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
