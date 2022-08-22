@@ -27,7 +27,7 @@ node main.js
 curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/generateHash'
 ```
 
-``
+```
 // Periodically send get requests to your generated URL for updates
 curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/emailBeacon?hash=967ae915-b422-4c59-820d-57f57076a5be'
 ```
