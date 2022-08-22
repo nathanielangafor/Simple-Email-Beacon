@@ -29,7 +29,7 @@ curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/gener
 
 ```
 // Periodically send get requests to your generated URL for updates
-curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/emailBeacon?hash=967ae915-b422-4c59-820d-57f57076a5be'
+curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/emailBeacon?hash=<YOUR_GENERATED_HASH>'
 ```
 
 ## Contributing
@@ -39,10 +39,6 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
- 
-
 
 
 # Frontend Repository
