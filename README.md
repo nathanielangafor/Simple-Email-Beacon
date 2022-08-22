@@ -43,6 +43,7 @@ curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/gener
 // Periodically send get requests to the following URL to get the mail status
 curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/emailBeaconStatus?hash=<YOUR_GENERATED_HASH>'
 ```
+Our goal is to expand this project to a working UI within the next few weeks.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
