@@ -2,7 +2,7 @@
 <p align="center"> <img src="Project Elements/Email_Beacon.png"/> </p>
 
 
-Have you ever wanted to know if someone has opened your email? Well now you can! 
+<p align="center"> Have you ever wanted to know if someone has opened your email? Well now you can! </p>
 
 # Frontend Repository
 https://github.com/cszach/email-beacon-frontend
