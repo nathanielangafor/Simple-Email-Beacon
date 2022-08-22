@@ -17,17 +17,19 @@ npm install express-ip
 
 ## Usage
 
-```python
-import foobar
+```JavaScript
+// Initialize express web client on port 3000
+node main.js
+```
 
-# returns 'words'
-foobar.pluralize('word')
+```curl
+// Generate hash to insert into email
+curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/generateHash'
+```
 
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+``
+// Periodically send get requests to your generated URL for updates
+curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/emailBeacon?hash=967ae915-b422-4c59-820d-57f57076a5be'
 ```
 
 ## Contributing
