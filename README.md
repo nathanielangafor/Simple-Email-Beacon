@@ -8,7 +8,7 @@
 <br/>
 
 ## Use Case
-As cyber security enthusiasts, we have come to understand over 95% of cyber crimes are due to human error and over 90% of these crimes are carried out through email. Our goal was to create a tool that allowed users to track their emails with as many data points as possible. With this, you will be able to get data from each time someone opens your email. This data includes but is not limited to
+As cyber security enthusiasts, we have come to understand over 95% of cyber crimes are due to human error and over 90% of these crimes are carried out through email. Our goal was to create a tool that allowed users to track data-sensitive emails with as many data points as possible. With this, you will be able to get data from each time someone opens your email. This data includes but is not limited to
 
 ```
 - IP Address
