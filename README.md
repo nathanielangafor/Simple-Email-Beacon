@@ -51,5 +51,4 @@ Please make sure to update tests as appropriate.
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
-# Frontend Repository
-https://github.com/cszach/email-beacon-frontend
+Here is the repo to the frontend: https://github.com/cszach/email-beacon-frontend
