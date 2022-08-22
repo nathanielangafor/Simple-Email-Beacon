@@ -28,7 +28,7 @@ npm install express-ip
 ```
 
 ## Usage
-Our goal is to expand this project to a working UI within the next few weeks but in the meantime, the tool can be used with the following commands.
+This project will be a working UI within the next few weeks but in the meantime, the tool can be used with the following commands.
 ```JavaScript
 // Initialize express web client on a local host, port 3000
 node main.js
