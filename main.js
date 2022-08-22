@@ -1,15 +1,16 @@
 // File imports
-// const database = require('./database'); // Database functions
+const database = require('./database'); // Database functions
 
-// Settings for creating web client
+// Imports for Express web client
 const express = require('express');
-const app = express();
 const expressip = require('express-ip');
-const port = 3000
 
-// Other useful settings
+// Other useful imports
 const crypto = require('crypto');
 
+// Settings to initilize Express web client
+const app = express();
+const port = 3000
 app.use(expressip().getIpInfoMiddleware);
 
 app.get('/generateHash', (req, res) => {
@@ -36,6 +37,25 @@ app.get('/emailBeacon', (req, res) => {
   }
 });
 
+app.get('/emailBeaconStatus', (req, res) => {
+  // Confirms the perameters hash is present
+  if (req.query.hash != undefined && req.query.hash != '') {
+
+    var data = database.read('trackingLinks');
+    var result = 'unread'
+
+    for (var i = 0; i < data.length; i++) {
+      if (data[i][3] == req.query.hash) {
+        result = 'read'; 
+      }
+    }
+
+    res.send(result)
+  } else {
+    res.send("{'error': 'Please add the hash perameter.'}");
+  }
+});
+
 app.get('/', (req, res) => {
   console.log(req.ipInfo);
   res.send('Hello World!')
@@ -44,6 +64,8 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+
 
 
 
