@@ -3,8 +3,6 @@
 
 <hr>
 <br/>
-<br/>
-<br/>
 
 ```SEB``` is the easiest and most secure way to track outgoing emails.
 
