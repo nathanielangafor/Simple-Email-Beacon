@@ -18,7 +18,7 @@ npm install express-ip
 ## Usage
 
 ```JavaScript
-// Initialize express web client on port 3000
+// Initialize express web client on local host, port 3000
 node main.js
 ```
 
