@@ -22,7 +22,7 @@ app.get('/generateUUID', (req, res) => {
   // Append data to database
   database.insertLink('', UUID, Date.now());
   // Return embed link
-  res.send(`http://127.0.0.1:3000/emailBeacon?UUID=${UUID}`);
+  res.send(`http://198.199.120.178/emailBeacon?UUID=${UUID}`);
 });
 
 
@@ -31,13 +31,12 @@ app.get('/emailBeacon', (req, res) => {
   // Confirms the perameters UUID is present
   if (req.query.UUID != undefined && req.query.UUID != '') {
   // Get the client IP address
-    // var ip = req.headers['x-forwarded-for']
-    var ip = '73.134.52.248'
+    var ip = req.headers['x-forwarded-for']
     // Insert a visit entry into the db
     database.insertVisit(Date.now(), ip, JSON.stringify(lookup(ip)), req.query.UUID)
 
     // Render image
-    res.sendFile('/Users/appleid/Downloads/Simple-Email-Beacon-main/1x1_image.png');
+    res.sendFile('./1x1_image.png');
 
   } else {
     res.send("Error, please add the UUID perameter.");
