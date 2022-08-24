@@ -26,6 +26,7 @@ Use the package manager npm to install the following packages
 ```bash
 npm install express
 npm install express-ip
+npm install sqlite3
 ```
 
 ## Usage
