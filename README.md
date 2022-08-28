@@ -8,7 +8,7 @@
 <br/>
 
 ## Use Case
-As cyber security enthusiasts, we have come to understand over 95% of cyber crimes are due to human error and over 90% of these crimes are carried out through email. Our goal was to create a tool that allowed users to track data-sensitive emails with as many data points as possible. With this, you will be able to get data from each time someone opens your email. This data includes but is not limited to
+As cyber security enthusiasts, we have come to understand over 95% of cyber crimes are due to human error and over 90% of these crimes are carried out through email. Our goal was to create a tool that allowed users to track data-sensitive emails or outgoing files with as many data points as possible. This data includes but is not limited to
 
 ```
 - IP Address
@@ -32,7 +32,7 @@ npm install sqlite3
 ## Usage
 This project will be a working UI within the next few weeks but in the meantime, the tool can be used with the following commands. To follow our progress please follow our repo: https://github.com/cszach/email-beacon-frontend
 ```JavaScript
-// Initialize express web client on a local host, port 3000
+// Host the node application on a web server, on port 3000
 node main.js
 ```
 
@@ -45,6 +45,19 @@ curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/gener
 // Periodically send get requests to the following URL to get the mail status
 curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/emailBeaconStatus?hash=<YOUR_GENERATED_HASH>'
 ```
+
+Or use our API
+
+```curl
+// Generate hash to insert into an email or share
+curl --insecure -H "Content-type: application/json" 'http://198.199.120.178/generateUUID'
+```
+
+```curl
+// Check the status of a generated tracking link
+curl --insecure -H "Content-type: application/json" 'http://198.199.120.178/EmailBeaconStatus?UUID=UUUDHERE'
+```
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
