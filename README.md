@@ -47,7 +47,7 @@ curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/gener
 curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/emailBeaconStatus?hash=<YOUR_GENERATED_HASH>'
 ```
 
-Or use our API <br/> <br/>
+Or use our API <br/> 
 
 ```curl
 // Generate hash to insert into an email or share
