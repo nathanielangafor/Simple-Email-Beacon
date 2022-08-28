@@ -30,6 +30,7 @@ npm install sqlite3
 ```
 
 ## Usage
+Setup Personal Server <br/> <br/>
 This project will be a working UI within the next few weeks but in the meantime, the tool can be used with the following commands. To follow our progress please follow our repo: https://github.com/cszach/email-beacon-frontend
 ```JavaScript
 // Host the node application on a web server, on port 3000
@@ -46,7 +47,7 @@ curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/gener
 curl --insecure -H "Content-type: application/json" 'http://127.0.0.1:3000/emailBeaconStatus?hash=<YOUR_GENERATED_HASH>'
 ```
 
-Or use our API
+Or use our API <br/> <br/>
 
 ```curl
 // Generate hash to insert into an email or share
