@@ -4,7 +4,7 @@
 <hr>
 <br/>
 
-```SEB``` is the easiest and most secure way to track outgoing emails. 
+```SEB``` is the easiest and most secure way to track outgoing emails. We we're advised by our peers to inpliment API key verification for the purpose of preventinig bad actors from taking advantage of it so this feature will be our next update.
 <br/>
 
 ## Use Case
