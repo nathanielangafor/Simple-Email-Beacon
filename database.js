@@ -55,7 +55,7 @@ function del(tableName, columnName, columnValue){
 }
 
 function update(tableName, columnName1, columnValue1, columnName2, columnValue2) {
-  // Updates a given location in the data table based on inputed data
+  // Updates a given location in the data table based on inputed information
     db.run(`UPDATE ${tableName} SET ${columnName1}=? WHERE ${columnName2}=?`, [columnValue1, columnValue2], function(err,rows){
   });
 }
