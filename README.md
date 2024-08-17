@@ -4,11 +4,11 @@
 <hr>
 <br/>
 
-```SEB``` is the easiest and most secure way to track outgoing emails. We were advised by our peers to impliment API key verification for the purpose of preventinig bad actors from taking advantage of it so this feature will be our next update.
+```SEB``` is the easiest and most secure way to track outgoing emails. We were advised by our peers to implement API key verification for the purpose of preventing bad actors from taking advantage of it so this feature will be our next update.
 <br/>
 
 ## Use Case
-As cyber security enthusiasts, we have come to understand over 95% of cyber crimes are due to human error and over 90% of these crimes are carried out through email. Our goal was to create a tool that allowed users to track data-sensitive emails or outgoing files with as many data points as possible. This data includes but is not limited to
+As cyber security enthusiasts, we have come to understand over 95% of cyber crimes are due to human error, and over 90% of these crimes are carried out through email. Our goal was to create a tool that allowed users to track data-sensitive emails or outgoing files with as many data points as possible. This data includes but is not limited to
 
 ```
 - IP Address
